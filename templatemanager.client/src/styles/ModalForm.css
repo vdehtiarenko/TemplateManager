@@ -1,0 +1,165 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    border: 2px solid black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close-btn {
+    float: right;
+    border: none;
+    background: black;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+    input:hover, textarea:hover {
+        border-color: #808080;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #808080;
+    }
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+    .form-buttons button {
+        background: #000000;
+        color: white;
+        padding: 10px 16px;
+        border: 2px solid black;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+        .form-buttons button:hover {
+            background: #808080;
+        }
+
+
+.generate-pdf-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.generate-pdf-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 95%;
+    border: 2px solid black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+
+.generate-pdf-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.generate-pdf-json-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.generate-pdf-json-label {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.generate-pdf-json-textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+    padding-right: calc(10px + 1rem);
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #000;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+    .generate-pdf-json-textarea:hover,
+    .generate-pdf-json-textarea:focus {
+        border-color: #808080;
+    }
+
+
+
+
